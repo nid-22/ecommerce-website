@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS-redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;500;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <div class="container">
+            <!--------------------- NAV BAR START----------------------------->
+            <div class="navbar">
+                <div>
+                    <img src="photos/logo.png" alt="" width="100px">
+                </div>
+                <nav>
+                    <ul id='menuitems'>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="photos/cart.png" width="30px" height="30px" alt="">
+                <img class="menu-icon" src="photos/menu.png" alt="" onclick="menutoggle()">
+            </div>
+            <!--------------------- NAV BAR END----------------------------->
+
+            
+        </div>
+
+        <!---------------------------account page---start------------------------------->
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="photos/image1.png" alt="" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span  onclick="login()">login</span>
+                                <span  onclick="register()">Register</span>
+                                <hr id="indicator">
+                            </div>
+                            <form action="" id="login">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot password</a>
+                            </form>
+                            <form action="" id="register">
+                                <input type="text" placeholder="Username">
+                                <input type="text" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">register</button>
+                                <a href="">Forgot password</a>
+                            </form>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!---------------------------account page---end------------------------------->
+        
+        
+
+         <!------------------------- FOOTER---------------------------------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>link for download andriod app 
+                        </p>
+                        <div class="app-logo">
+                            <img src="photos/play-store.png" alt="">
+                            <img src="photos/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="photos/logo-white.png" alt="">
+                        <p>s ferramentas de publicação electrónica e editores de páginas web us
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>USEFULL LINKS</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog post</li>
+                            <li>Return policy</li>
+                            <li>Join affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>FOLLOW US </h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+                <p class='copyright'>Copyright 2020 - Easy Tutorials</p>
+            </div>
+        </div>
+        <!------------------------- FOOTER---------------------------------------------->
+        
+    </div>
+   
+    <script>
+      /*--------------------------- JS FOR TOGGLE MENU-----start----------------------------------*/
+        var menuitems = document.getElementById('menuitems');
+        menuitems.style.maxHeight = '0px';
+        function menutoggle(){
+            if(menuitems.style.maxHeight == '0px'){
+            menuitems.style.maxHeight = '200px';
+        }else{
+            menuitems.style.maxHeight = '0px';
+            }
+        }
+        
+    /*--------------------------- JS FOR TOGGLE MENU-----end------------------------------------*/
+     /*--------------------------- LOGIN REGISTRATION-----start----------------------------------*/
+      var loginform = document.getElementById('login')
+      var registerform = document.getElementById('register')
+      var indicator = document.getElementById('indicator')
+      function login(){
+          loginform.style.transform = 'translateX(300px)'
+          registerform.style.transform = 'translateX(300px)'
+          indicator.style.transform = 'translateX(0px)'
+      }
+      function register(){
+          loginform.style.transform = 'translateX(0px)'
+          registerform.style.transform = 'translateX(0px)'
+          indicator.style.transform = 'translateX(100px)'
+      }
+        
+    /*--------------------------- LOGIN REGISTER----end------------------------------------*/
+    
+    </script>
+    
+</body>
+</html>

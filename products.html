@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS-redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;500;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <div class="container">
+            <!--------------------- NAV BAR START----------------------------->
+            <div class="navbar">
+                <div>
+                    <img src="photos/logo.png" alt="" width="100px">
+                </div>
+                <nav>
+                    <ul id='menuitems'>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="photos/cart.png" width="30px" height="30px" alt="">
+                <img class="menu-icon" src="photos/menu.png" alt="" onclick="menutoggle()">
+            </div>
+            <!--------------------- NAV BAR END----------------------------->
+
+            
+        </div>
+    
+    <div class="categories">
+            
+            <!---------------------  PRODUCTS START---------------------------------->
+            
+                <div class="small-container">
+
+                    <div class="row row-2">
+                        <h3>All Products</h3>
+                        <select name="filter" id="filter">
+                            <option value="">default filter</option>
+                            <option value="">filter by price </option>
+                            <option value="">filter by popularity </option>
+                            <option value="">filter by rating </option>
+                            <option value="">filter by sale </option>
+                        </select>
+                    </div>
+                   
+                    <div class="row">
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/row2img1.jpg" alt="" width="200px" height="260px">
+                            <h4>Tank top</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 500 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/row2img2.jpg" alt="" width="200px" height="260px">
+                            <h4>Crop top</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 600 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/row2img3.jpg" alt="" width="200px" height="260x">
+                            <h4>Tank top</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 770 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/row2img4.jpg" alt="" width="200px" height="260px">
+                            <h4>Crop top</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 200 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        
+                        
+                    </div>
+                    <div class="row">
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-1.jpg" alt="" width="200px" height="260px">
+                            <h4>Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 800 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-2.jpg" alt="" width="200px" height="260px">
+                            <h4>Shoes</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 1700 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-3.jpg" alt="" width="200px" height="260x">
+                            <h4>Pant</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Rs 2500 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-4.jpg" alt="" width="200px" height="260px">
+                            <h4>Tshirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 300 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        
+                        
+                    </div>
+                    <div class="row">
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-5.jpg" alt="" width="200px" height="260px">
+                            <h4>Shoes</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 2300 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-6.jpg" alt="" width="200px" height="260px">
+                            <h4>shirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 800 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-7.jpg" alt="" width="200px" height="260x">
+                            <h4>socks</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Rs 200 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-8.jpg" alt="" width="200px" height="260px">
+                            <h4>watch</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 1500 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        
+                        
+                    </div>
+                    <div class="row">
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-9.jpg" alt="" width="200px" height="260px">
+                            <h4>Watch</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 800 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-10.jpg" alt="" width="200px" height="260px">
+                            <h4>Shoes</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 1000 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-11.jpg" alt="" width="200px" height="260x">
+                            <h4>Shoes</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 2500</p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        <!--------------------- product------------------------->
+                        <div class="col-4">
+                            <img src="photos/product-12.jpg" alt="" width="200px" height="260px">
+                            <h4>Shirt</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>Rs 300 </p>
+                        </div>
+                        <!--------------------- product------------------------->
+                        
+                        
+                    </div>
+                    <div class="page-btn">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>&#x2192;</span>
+                    </div>
+
+                </div>
+            
+            <!--------------------- FEATURED PRODUCTS END---------------------------------->
+            
+       
+
+         <!------------------------- FOOTER---------------------------------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>link for download andriod app 
+                        </p>
+                        <div class="app-logo">
+                            <img src="photos/play-store.png" alt="">
+                            <img src="photos/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="photos/logo-white.png" alt="">
+                        <p>s ferramentas de publicação electrónica e editores de páginas web us
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>USEFULL LINKS</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog post</li>
+                            <li>Return policy</li>
+                            <li>Join affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>FOLLOW US </h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+                <p class='copyright'>Copyright 2020 - Easy Tutorials</p>
+            </div>
+        </div>
+        <!------------------------- FOOTER---------------------------------------------->
+        
+    </div>
+   
+    <script>
+      /*--------------------------- JS FOR TOGGLE MENU-----start----------------------------------*/
+        var menuitems = document.getElementById('menuitems');
+        menuitems.style.maxHeight = '0px';
+        function menutoggle(){
+            if(menuitems.style.maxHeight == '0px'){
+            menuitems.style.maxHeight = '200px';
+        }else{
+            menuitems.style.maxHeight = '0px';
+            }
+        }
+        
+    /*--------------------------- JS FOR TOGGLE MENU-----end------------------------------------*/
+    </script>
+    
+</body>
+</html>
